@@ -1,0 +1,15 @@
+server:
+  port: 8081
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp连接池支持
+  sentinel:
+    enabled: true # 开启Feign对Sentinel的整合
+hm:
+  swagger:
+    title: 交易服务接口文档
+    package: com.heima.shangpin.controller
+  db:
+    database: hm-item
+seata:
+  data-source-proxy-mode: XA
